@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Nanguo Dashboard</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div id="app">
+  <header>
+    <h1>Nanguo</h1>
+    <div class="header-right">
+      <span id="agent-badge" class="badge offline">agent offline</span>
+      <button id="logout-btn" class="btn-sm">logout</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="task-form">
+      <textarea id="command-input" placeholder="What should the agent do? e.g. Open Twitter and like the last 3 posts" rows="3"></textarea>
+      <button id="send-btn" class="btn-primary" disabled>Send Task</button>
+      <div id="form-error" class="error-msg hidden"></div>
+    </section>
+
+    <section class="task-list">
+      <h2>Tasks</h2>
+      <div id="tasks-container">
+        <p class="empty-state">No tasks yet</p>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

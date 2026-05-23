@@ -1,0 +1,6 @@
+# Nanguo – Remote Browser Agent Controller
+data/
+__pycache__/
+*.pyc
+.env
+*.log
